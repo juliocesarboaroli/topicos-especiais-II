@@ -94,6 +94,10 @@ input.btn:hover {
     padding: 5px 7px 5px 7px;
 }
 
+.label-inline-block {
+    display: inline-block;
+}
+
 .menu {
     list-style-type: none;
     margin: 0;
