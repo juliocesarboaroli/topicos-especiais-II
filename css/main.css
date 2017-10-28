@@ -19,6 +19,28 @@ button:hover {
     opacity: 0.8;
 }
 
+label {
+    display: block;
+}
+
+a.btn {
+    margin: 5px 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.btn:hover {
+    opacity: 0.8;
+}
+
+input.btn {
+    margin: 5px 0;
+}
+
+input.btn:hover {
+    opacity: 0.8;
+}
+
 .content {
     margin: 0 auto;
 }
@@ -35,9 +57,25 @@ button:hover {
     display: block;
 }
 
+.field {
+    display: inline-block;
+}
+
+.field-200 {
+    width: 200px;
+}
+
 .btn-full-width {
     width: 100%;
     display: block;
+}
+
+.btn-gray {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    padding: 5px 7px 5px 7px;
 }
 
 .btn-green {
@@ -73,8 +111,35 @@ button:hover {
 }
 
 .menu li:first-child {
-    width: 15%;
+    min-width: 15%;
+    max-width: 40%;
     font-weight: bold;
     letter-spacing: 3px;
     text-transform: uppercase;
+}
+
+.list-table {
+    width: 100%;
+    line-height: 30px;
+}
+
+.list-table thead tr {
+    background-color: #ccc;
+}
+
+.list-table thead tr th {
+    text-align: left;
+}
+
+.list-table tbody tr td:last-child {
+    width: 80px;
+}
+
+.list-table tbody tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.list-table tbody tr:hover {
+    background-color: #f4f4f4;
+    opacity: 0.8;
 }
