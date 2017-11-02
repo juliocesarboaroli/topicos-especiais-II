@@ -1,5 +1,6 @@
 <?php
-    include('../../models/conexao/conexao.php');
+    include("../../models/conexao/conexao.php");
+    include("../../models/routes/routes.php");
 
     class Login 
     {
@@ -19,6 +20,34 @@
                     return false;
                 }
             }
+        }
+
+        public function LogarSistema()
+        {
+            $rotas = new Routes();
+            if (isset($_POST['usuario']) && isset($_POST['senha']))
+            {
+                $login = new Login();
+                $retorno_login = $login->VerificarUsuarioSenha($_POST['usuario'],$_POST['senha']);
+                if ($retorno_login)
+                {
+                    
+                }
+                else
+                {
+                    
+                }
+            }
+            else
+            {
+                header("Location:".$rotas->routeErro."");
+            }
+        }
+
+        public function RedirecionarLogin()
+        {
+            $rotas = new Routes();
+            header("Location:".$rotas->routeLogin."");
         }
     }
 ?>   
