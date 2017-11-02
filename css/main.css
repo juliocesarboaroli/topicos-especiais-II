@@ -27,8 +27,20 @@ button:hover {
     opacity: 0.8;
 }
 
+.button-erro {
+    margin: 0 auto;
+    margin-top: 5px;
+    max-width: 200px;
+    display: block;
+}
+
 label {
     display: block;
+}
+
+.label-erro {
+    text-align: center;
+    color: red;
 }
 
 a.btn {
@@ -155,3 +167,11 @@ input.btn:hover {
     background-color: #f4f4f4;
     opacity: 0.8;
 }
+
+.h1-pagina-erro {
+    text-align: center;
+    color: red;
+    margin-top: 20%;
+}
+
+

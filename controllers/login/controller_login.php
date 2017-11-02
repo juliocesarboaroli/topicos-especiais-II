@@ -1,21 +1,35 @@
 <?php
     include("../../models/login/login.php");
+    include("../../models/routes/routes.php");
 
-    $login = new Login();
-    if (isset($_POST['usuario']) && isset($_POST['senha']))
+    class ControllerLogin
     {
-        $retorno_login = $login->Logar($_POST['usuario'],$_POST['senha']);
-        if ($retorno_login)
+        public function LogarSistema()
         {
-            echo "Usuário logado";
+            $login = new Login();
+            $rotas = new Routes();
+            if (isset($_POST['usuario']) && isset($_POST['senha']))
+            {
+                $retorno_login = $login->VerificarUsuarioSenha($_POST['usuario'],$_POST['senha']);
+                if ($retorno_login)
+                {
+                    echo "Usuário logado";
+                }
+                else
+                {
+                    echo "Usuário incorreto";
+                }
+            }
+            else
+            {
+                header("Location:".$rotas->routeErro."");
+            }
         }
-        else
+
+        public function RedirecionarLogin()
         {
-            echo "Usuário incorreto";
+            $rotas = new Routes();
+            header("Location:".$rotas->routeLogin."");
         }
-    }
-    else
-    {
-        throw new Exception("As informações de usúario e senha estão em branco");
     }
 ?>
