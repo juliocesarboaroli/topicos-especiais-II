@@ -20,6 +20,7 @@
                     return false;
                 }
             }
+            $conexao->DestruirConexao($conexaoBanco);
         }
 
         public function LogarSistema()
