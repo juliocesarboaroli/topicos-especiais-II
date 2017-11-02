@@ -1,17 +1,24 @@
 <?php
-    namespace Login
-    {
-        class Login 
-        {
-            private $usuario;
-            private $senha;
+    include('../../models/conexao/conexao.php');
 
-            function login($usuario, $senha)
+    class Login 
+    {
+        public function Logar($usuario, $senha)
+        {
+            $conexao = new Conexao();
+            $conexaoBanco = $conexao->CriarConexao();
+            $resultado = $conexaoBanco->query("select usuario,senha from login where usuario = '".$usuario."' and senha = '".$senha."'");
+            while ($linha = $resultado->fetch(PDO::FETCH_OBJ))
             {
-                $this->$usuario = $usuario;
-                $this->$senha =  $senha;
+                if ((MD5($usuario) == $linha->usuario) && (MD5($senha) == $linha->senha))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
         }
     }
-
-?>
+?>   

@@ -11,16 +11,14 @@
 
 <body>
     <div class="content">
-        <div class="login">
+        <form class="login" id="login" name="login" action="controllers/login/controller_login.php" method="post" />
             <label for="usuario">Usuário</label>
             <input type="text" class="field-full-width" name="usuario" id="usuario" placeholder="Seu usuário">
             <label for="senha">Senha</label>
             <input type="password" class="field-full-width" name="senha" id="senha" placeholder="Sua senha">
-
-            <button class="btn-green btn-full-width">Entrar</button>
+            <button type="submit" class="btn-green btn-full-width"> Entrar </button>
             <a href="">Criar usuário</a>
-        </div>
+        </form>
     </div>
 </body>
-
 </html>
