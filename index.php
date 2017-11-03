@@ -5,20 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Login </title>
+    <title>Home - HESS</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div class="content">
-        <form class="login" id="login" name="login" action="controllers/login/controller_login_router.php" method="post" />
-            <label for="usuario">Usuário</label>
-            <input type="text" class="field-full-width" name="usuario" id="usuario" placeholder="Seu usuário">
-            <label for="senha">Senha</label>
-            <input type="password" class="field-full-width" name="senha" id="senha" placeholder="Sua senha">
-            <button type="submit" class="btn-green btn-full-width"> Entrar </button>
-            <a href="">Criar usuário</a>
-        </form>
+        <ul class="menu">
+            <li><a href="index.php">HESS STORE</a></li>
+            <li><a href="views/jogos.php">Jogos</a></li>
+            <li><a href="">Acessórios</a></li>
+            <li><a href="">Formas de pagamento</a></li>
+            <li><a href="">Contato</a></li>
+            <li><a href="">Carrinho</a></li>
+            <li><a href="views/login.php">Login</a></li>
+        </ul>
+
+        <div class="welcome">
+            <h1>HESS STORE</h1>
+            <h6>A loja é nossa, o prazer é seu</h6>
+        </div>
     </div>
 </body>
 </html>
