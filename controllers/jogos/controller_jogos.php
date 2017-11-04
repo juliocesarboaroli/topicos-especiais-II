@@ -1,31 +1,27 @@
 <?php
-    include("../../models/jogos/jogos.php");
-   
-    RouterInserirJogo('',0,'');
+    include($_SERVER["DOCUMENT_ROOT"]."/topicos/models/jogos/jogos.php");
+    $jogos = new Jogos();
 
-    function RouterInserirJogo()
+    if ((isset($_POST['titulo']) && isset($_POST['preco']) && (isset($_FILES['imagem']))))
     {
-        if ((isset($_POST['titulo']) && isset($_POST['preco'])))
-        {
-            $titulo = $_POST['titulo'];
-            $preco = $_POST['preco'];
+        $titulo = $_POST['titulo'];
+        $preco = $_POST['preco'];
+        $imagem = $_FILES['imagem']['tmp_name'];
+        $tamanho_imagem = filesize($imagem);
+        $jogos->InserirNovoJogo($titulo, $preco, $imagem, $tamanho_imagem);
+    }
 
-            $jogos = new Jogos();
-            $jogos->InserirNovoJogo($titulo, $preco);
-        }
-     }
-
-     function RouterDeletarJogo($titulo)
+     function DeletarJogo($titulo)
      {
         $jogos->ExcluirJogo($titulo);
      }
 
-     function RouterAtualizarJogo($titulo)
+     function AtualizarJogo($titulo)
      {
          $jogos->AtualizarJogo($titulo);
      }
 
-     function RouterListarJogos()
+     function ListarJogos()
      {
          $jogos->ListarJogos();
      }

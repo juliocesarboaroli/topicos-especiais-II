@@ -22,25 +22,19 @@
         </ul>
         <div class="cards">
             <?php
-                print "<div class='card'>";
-                    print "<div class='card-title'>Pro evolution soccer 2018</div>";
-                    print "<div class='card-image'>";
-                        print "<img src='../imagens-teste/img.png' alt='PES 18'>";
-                    print "</div>";
-                    print "<div class='card-info'>";
-                        print "R$ 200,00";
-                    print "</div>";
-                    print "<div class='card-footer'>";
-                        print "<a href='' class='btn btn-green'>Adicionar ao carrinho</a>";
-                    print "</div>";
-                print "</div>";
+                include("../controllers/jogos/controller_jogos.php");
+                $jogos = new Jogos();
+                $jogos->ListarJogos();
             ?>
         </div>
-        <form id="teste-insercao" name="teste-insercao" action="../controllers/jogos/controller_jogos.php?RouterInserirJogo()" method="post">
-            <input  id="titulo" name="titulo"/>
-            <input  id="preco" name="preco" />
-            <input type="submit" value="Enviar" />  
-        </form>
+            <form action="../controllers/jogos/controller_jogos.php" method="post" id="upload" name="upload" enctype="multipart/form-data">
+                <input id="titulo" name="titulo" />
+                <input id="preco" name="preco" />
+                <input type="file" id="imagem" name="imagem" />
+                <input type="submit" value="submitar" />
+            </form>
+        <div>
+        </div>
     </div>
 </body>
 </html>
