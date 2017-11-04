@@ -12,173 +12,35 @@
 <body>
     <div class="content">
         <ul class="menu">
-            <li><a href="index.php">HESS STORE</a></li>
-            <li><a href="views/jogos.php">Jogos</a></li>
+            <li><a href="../index.php">HESS STORE</a></li>
+            <li><a href="jogos.php">Jogos</a></li>
             <li><a href="">Acessórios</a></li>
             <li><a href="">Formas de pagamento</a></li>
             <li><a href="">Contato</a></li>
             <li><a href="">Carrinho</a></li>
-            <li><a href="views/login.php">Login</a></li>
+            <li><a href="login.php">Login</a></li>
         </ul>
-
         <div class="cards">
-            <div class="card">
-                <div class="card-title">Pro evolution soccer 2018</div>
-                <div class="card-image">
-                    <img src="../imagens-teste/img.png" alt="PES 18">
-                </div>
-                <div class="card-info">
-                    R$ 200,00
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-green">Adicionar ao carrinho</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Pro evolution soccer 2018</div>
-                <div class="card-image">
-                    <img src="../imagens-teste/img.png" alt="PES 18">
-                </div>
-                <div class="card-info">
-                    R$ 200,00
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-green">Adicionar ao carrinho</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Pro evolution soccer 2018</div>
-                <div class="card-image">
-                    <img src="../imagens-teste/img.png" alt="PES 18">
-                </div>
-                <div class="card-info">
-                    R$ 200,00
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-green">Adicionar ao carrinho</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Pro evolution soccer 2018</div>
-                <div class="card-image">
-                    <img src="../imagens-teste/img.png" alt="PES 18">
-                </div>
-                <div class="card-info">
-                    R$ 200,00
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-green">Adicionar ao carrinho</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Pro evolution soccer 2018</div>
-                <div class="card-image">
-                    <img src="../imagens-teste/img.png" alt="PES 18">
-                </div>
-                <div class="card-info">
-                    R$ 200,00
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-green">Adicionar ao carrinho</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Pro evolution soccer 2018</div>
-                <div class="card-image">
-                    <img src="../imagens-teste/img.png" alt="PES 18">
-                </div>
-                <div class="card-info">
-                    R$ 200,00
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-green">Adicionar ao carrinho</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Pro evolution soccer 2018</div>
-                <div class="card-image">
-                    <img src="../imagens-teste/img.png" alt="PES 18">
-                </div>
-                <div class="card-info">
-                    R$ 200,00
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-green">Adicionar ao carrinho</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Pro evolution soccer 2018</div>
-                <div class="card-image">
-                    <img src="../imagens-teste/img.png" alt="PES 18">
-                </div>
-                <div class="card-info">
-                    R$ 200,00
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-green">Adicionar ao carrinho</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Pro evolution soccer 2018</div>
-                <div class="card-image">
-                    <img src="../imagens-teste/img.png" alt="PES 18">
-                </div>
-                <div class="card-info">
-                    R$ 200,00
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-green">Adicionar ao carrinho</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Pro evolution soccer 2018</div>
-                <div class="card-image">
-                    <img src="../imagens-teste/img.png" alt="PES 18">
-                </div>
-                <div class="card-info">
-                    R$ 200,00
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-green">Adicionar ao carrinho</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Pro evolution soccer 2018</div>
-                <div class="card-image">
-                    <img src="../imagens-teste/img.png" alt="PES 18">
-                </div>
-                <div class="card-info">
-                    R$ 200,00
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-green">Adicionar ao carrinho</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Pro evolution soccer 2018</div>
-                <div class="card-image">
-                    <img src="../imagens-teste/img.png" alt="PES 18">
-                </div>
-                <div class="card-info">
-                    R$ 200,00
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-green">Adicionar ao carrinho</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-title">Pro evolution soccer 2018</div>
-                <div class="card-image">
-                    <img src="../imagens-teste/img.png" alt="PES 18">
-                </div>
-                <div class="card-info">
-                    R$ 200,00
-                </div>
-                <div class="card-footer">
-                    <a href="" class="btn btn-green">Adicionar ao carrinho</a>
-                </div>
-            </div>
+            <?php
+                print "<div class='card'>";
+                    print "<div class='card-title'>Pro evolution soccer 2018</div>";
+                    print "<div class='card-image'>";
+                        print "<img src='../imagens-teste/img.png' alt='PES 18'>";
+                    print "</div>";
+                    print "<div class='card-info'>";
+                        print "R$ 200,00";
+                    print "</div>";
+                    print "<div class='card-footer'>";
+                        print "<a href='' class='btn btn-green'>Adicionar ao carrinho</a>";
+                    print "</div>";
+                print "</div>";
+            ?>
         </div>
+        <form id="teste-insercao" name="teste-insercao" action="../controllers/jogos/controller_jogos.php?RouterInserirJogo()" method="post">
+            <input  id="titulo" name="titulo"/>
+            <input  id="preco" name="preco" />
+            <input type="submit" value="Enviar" />  
+        </form>
     </div>
 </body>
 </html>

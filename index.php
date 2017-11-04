@@ -8,7 +8,6 @@
     <title>Home - HESS</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
     <div class="content">
         <ul class="menu">
