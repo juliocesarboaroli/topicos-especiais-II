@@ -1,7 +1,8 @@
 <?php
     class Routes
     {
-        public $routeLogin = "/topicos/index.php";
+        public $routeIndex = "/topicos/index.php";
+        public $routeLogin = "/topicos/views/login.php";
         public $routeErro = "/topicos/views/erro.php";
         public $routeJogos = "/topicos/views/jogos.php";
     }

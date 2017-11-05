@@ -7,6 +7,7 @@
         public function VerificarUsuarioSenha($usuario, $senha)
         {
             $conexao = new Conexao();
+            $rotas = new Routes();
             $conexaoBanco = $conexao->CriarConexao();
             $resultado = $conexaoBanco->query("select usuario,senha from login where usuario = '".MD5($usuario)."' and senha = '".MD5($senha)."'");
             while ($row = $resultado->fetch(PDO::FETCH_OBJ))
@@ -24,7 +25,6 @@
 
         public function LogarSistema()
         {
-            $rotas = new Routes();
             if (isset($_POST['usuario']) && isset($_POST['senha']))
             {
                 $login = new Login();
@@ -35,7 +35,8 @@
                 }
                 else
                 {
-                    
+                    $login = new Login();
+                    $login->RedirecionarLogin();
                 }
             }
             else
