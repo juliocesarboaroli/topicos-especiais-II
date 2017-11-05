@@ -33,8 +33,6 @@
                 <input type="file" id="imagem" name="imagem" />
                 <input type="submit" value="submitar" />
             </form>
-        <div>
-        </div>
     </div>
 </body>
 </html>
