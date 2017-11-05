@@ -22,14 +22,14 @@
         </ul>
         <div class="cards">
             <?php
-                include("../controllers/jogos/controller_jogos.php");
+                include($_SERVER["DOCUMENT_ROOT"]."/topicos/controllers/jogos/controller_jogos.php");
                 $jogos = new Jogos();
                 $jogos->ListarJogos();
             ?>
         </div>
             <form action="../controllers/jogos/controller_jogos.php" method="post" id="upload" name="upload" enctype="multipart/form-data">
-                <input id="titulo" name="titulo" />
-                <input id="preco" name="preco" />
+                <input type="text" id="titulo" name="titulo" />
+                <input type="text" id="preco" name="preco" />
                 <input type="file" id="imagem" name="imagem" />
                 <input type="submit" value="submitar" />
             </form>

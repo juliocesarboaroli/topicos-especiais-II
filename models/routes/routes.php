@@ -3,6 +3,6 @@
     {
         public $routeLogin = "/topicos/index.php";
         public $routeErro = "/topicos/views/erro.php";
-        public $routeJogos = "/topicos/views/jogos";
+        public $routeJogos = "/topicos/views/jogos.php";
     }
 ?>

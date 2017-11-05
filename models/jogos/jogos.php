@@ -7,9 +7,10 @@
         public function InserirNovoJogo($titulo, $preco, $imagem, $tamanhoImagem)
         {
             $conexao = new Conexao();
+            $rotas = new Routes();
             $conexaoBanco = $conexao->CriarConexao();
             $imagem = addslashes(fread(fopen($imagem, "r"), $tamanhoImagem));
-            $conexaoBanco->exec("insert into jogos (titulo,preco,imagem) values ('".$titulo."',".$preco.",'".$imagem."')") or die(print_r($conexaoBanco->errorInfo()));
+            $conexaoBanco->exec("insert into jogos (titulo,preco,imagem) values ('".$titulo."',".$preco.",'".$imagem."')") or die(header("Location:".$rotas->routeErro.""));
             header("Location:".$rotas->routeJogos."");
         }
 

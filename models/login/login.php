@@ -1,6 +1,6 @@
 <?php
-    include("../../models/conexao/conexao.php");
-    include("../../models/routes/routes.php");
+    include($_SERVER["DOCUMENT_ROOT"]."/topicos/models/conexao/conexao.php");
+    include($_SERVER["DOCUMENT_ROOT"]."/topicos/models/routes/routes.php");
     
     class Login 
     {
