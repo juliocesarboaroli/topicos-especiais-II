@@ -35,6 +35,10 @@ label {
     text-align: center;
 }
 
+.inline {
+    display: inline;
+}
+
 a.btn {
     margin: 5px 0;
     text-decoration: none;
@@ -207,4 +211,8 @@ input.btn:hover {
 
 .card-footer a, button {
     display: block;
+}
+
+.center-align {
+    text-align: center;
 }
