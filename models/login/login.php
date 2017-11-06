@@ -25,7 +25,6 @@
         public function LogarSistema()
         {
             $login = new Login();
-
             if (isset($_POST['usuario']) && isset($_POST['senha']))
             {
                 $retorno_login = $login->VerificarUsuarioSenha($_POST['usuario'],$_POST['senha']);
