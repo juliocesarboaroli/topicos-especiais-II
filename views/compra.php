@@ -37,7 +37,7 @@
                     <option value="ps4">PS4</option>
                     <option value="ps3">PS3</option>
                 </select>
-                <input type="submit" class="btn btn-green btn-full-width" value="Pronto">
+                <input type="submit" class="btn btn-green" value="Pronto">
             </form>
         </div>
     </div>
