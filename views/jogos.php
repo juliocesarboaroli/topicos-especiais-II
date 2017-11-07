@@ -18,7 +18,7 @@
             <li><a href="">Formas de pagamento</a></li>
             <li><a href="">Contato</a></li>
             <li><a href="">Carrinho</a></li>
-            <li><a href="login.php">Login</a></li>
+            <li><a href="login.php">Área do administrador</a></li>
         </ul>
         <div class="cards">
             <?php

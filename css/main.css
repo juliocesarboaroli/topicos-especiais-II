@@ -163,6 +163,7 @@ input.btn:hover {
 
 .list-table tbody tr td:last-child {
     width: 80px;
+    text-align: center;
 }
 
 .list-table tbody tr:nth-child(even) {
@@ -215,4 +216,29 @@ input.btn:hover {
 
 .center-align {
     text-align: center;
+}
+
+.admin-option {
+    display: inline-block;
+    text-align: center;
+    width: calc(50% - 15px);
+    height: 100px;
+    border-radius: 5px;
+    background-color: #ccc;
+    font-size: 3em;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.admin-option:hover {
+    opacity: 0.7;
+}
+
+.admin-option div {
+    margin-top: 25px;
+}
+
+.no-a-style {
+    text-decoration: none;
+    color: black;
 }

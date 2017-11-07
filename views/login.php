@@ -17,7 +17,6 @@
             <label for="senha">Senha</label>
             <input type="password" class="field-full-width" name="senha" id="senha" placeholder="Sua senha">
             <button type="submit" class="btn-green btn-full-width"> Entrar </button>
-            <a href="">Criar usuário</a>
         </form>
     </div>
 </body>

@@ -34,7 +34,7 @@
                 print "<div class='card'>";
                 print "<div class='card-title'>".$row->titulo."</div>";
                 print "<div class='card-image'>";
-                    print "<img height='200' width='230' src='data:image/jpeg;base64,".base64_encode($row->imagem)."' alt='".$row->titulo."'>";
+                    print "<img height='200' width='200' src='data:image/jpeg;base64,".base64_encode($row->imagem)."' alt='".$row->titulo."'>";
                 print "</div>";
                 print "<div class='card-info'>";
                     print "R$ ".$row->preco."";
