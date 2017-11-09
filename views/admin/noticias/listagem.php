@@ -11,28 +11,25 @@
 
 <body>
     <div class="content">
-        <h1>Manutenção de jogos</h1>
+        <h1>Manutenção de notícias</h1>
         <a href="formulario.php" class="btn btn-green btn-full-width">Adicionar</a>
         <table class="list-table">
             <thead>
                 <tr>
-                    <th>Nome</th>
-                    <th>Preço (R$)</th>
+                    <th>Descrição</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>PES 2018</td>
-                    <td>200</td>
+                    <td>Novo jogo adicionado à loja. PES 2018 está disponível por R$ 200,00</td>
                     <td>
                         <a href="formulario.php"><img src="../../../icons/pencil.png"/></a>
                         <a href=""><img src="../../../icons/trash.png"/></a>
                     </td>
                 </tr>
                 <tr>
-                    <td>FIFA 18</td>
-                    <td>200</td>
+                    <td>Novo acessório na loja. Agora vendemos o ASUS ZENFONE 4.</td>
                     <td>
                         <a href="formulario.php"><img src="../../../icons/pencil.png"/></a>
                         <a href=""><img src="../../../icons/trash.png"/></a>

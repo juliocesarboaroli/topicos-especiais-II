@@ -40,7 +40,7 @@
                     print "R$ ".$row->preco."";
                 print "</div>";
                 print "<div class='card-footer'>";
-                    print "<a href='' class='btn btn-green'>Adicionar ao carrinho</a>";
+                    print "<a href='' class='btn btn-green'>Adicionar ao Notícias</a>";
                 print "</div>";
                 print "</div>";
             }

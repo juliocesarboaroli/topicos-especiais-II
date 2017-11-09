@@ -15,7 +15,7 @@
             <li><a href="">Acessórios</a></li>
             <li><a href="">Formas de pagamento</a></li>
             <li><a href="views/contato.php">Contato</a></li>
-            <li><a href="">Carrinho</a></li>
+            <li><a href="">Notícias</a></li>
             <li><a href="views/login.php">Área do administrador</a></li>
         </ul>
 
