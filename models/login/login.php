@@ -25,16 +25,18 @@
         public function LogarSistema()
         {
             $login = new Login();
+            $rotas = new Routes();
+
             if (isset($_POST['usuario']) && isset($_POST['senha']))
             {
                 $retorno_login = $login->VerificarUsuarioSenha($_POST['usuario'],$_POST['senha']);
                 if ($retorno_login)
                 {
-                    
+                    return true;
                 }
                 else
                 {
-                    $login->RedirecionarLogin();
+                    return false;
                 }
             }
             else
