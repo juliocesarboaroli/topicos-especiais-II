@@ -5,5 +5,10 @@
         public $routeLogin = "/topicos/views/login.php";
         public $routeErro = "/topicos/views/erro.php";
         public $routeJogos = "/topicos/views/jogos.php";
+
+        public function routeIndex()
+        {
+            header("location: /topicos/index.php");
+        }
     }
 ?>

@@ -11,9 +11,8 @@
 
 <body>
     <div class="content">
-        <form action="">
+        <form action="../../../controllers/jogos/controller_jogos.php" method="post" id="upload-jogos" name="upload-jogos" enctype="multipart/form-data">
             <input type="hidden" name="codigo" id="codigo">
-
             <label for="titulo">Título</label>
             <input type="text" id="titulo" name="titulo" class="field-full-width"/>
             <label for="preco">Preço</label>
