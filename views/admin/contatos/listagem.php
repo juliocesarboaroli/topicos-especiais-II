@@ -18,7 +18,7 @@
                 <tr>
                     <th>Pessoa</th>
                     <th>Mensagem</th>
-                    <th>email</th>
+                    <th>Email</th>
                     <th></th>
                 </tr>
             </thead>

@@ -37,6 +37,11 @@
                 <span>COMPRAS</span>
             </div>
         </a>
+        <a href="usuarios/listagem.php" class="no-a-style admin-option">
+            <div>
+                <span>USUÁRIOS</span>
+            </div>
+        </a>
     </div>
 </body>
 </html>
