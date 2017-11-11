@@ -15,7 +15,7 @@
             <li><a href="views/acessorios.php">Acessórios</a></li>
             <li><a href="">Formas de pagamento</a></li>
             <li><a href="views/contato.php">Contato</a></li>
-            <li><a href="">Notícias</a></li>
+            <li><a href="noticias.php">Notícias</a></li>
             <li><a href="views/login.php">Área do administrador</a></li>
         </ul>
 
