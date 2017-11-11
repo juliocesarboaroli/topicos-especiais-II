@@ -11,7 +11,7 @@
             $conexaoBanco = $conexao->CriarConexao();
             $imagem = addslashes(fread(fopen($imagem, "r"), $tamanhoImagem));
             $conexaoBanco->exec("insert into jogos (titulo,preco,imagem) values ('".$titulo."',".$preco.",'".$imagem."')") or die(header("Location:".$rotas->routeErro.""));
-            header("Location:".$rotas->routeJogos."");
+            header("Location:".$rotas->routeListagemJogos."");
         }
 
         public function ExcluirJogo($titulo)
@@ -40,9 +40,27 @@
                     print "R$ ".$row->preco."";
                 print "</div>";
                 print "<div class='card-footer'>";
-                    print "<a href='' class='btn btn-green'>Adicionar ao Notícias</a>";
+                    print "<a href='compra.php' class='btn btn-green'> Comprar </a>";
                 print "</div>";
                 print "</div>";
+            }
+        }
+
+        public function ListarInformacoesTextoJogos()
+        {
+            $conexao = new Conexao();
+            $conexaoBanco = $conexao->CriarConexao();
+            $resultado = $conexaoBanco->query("select id,titulo,preco from jogos");
+            while ($row = $resultado->fetch(PDO::FETCH_OBJ))
+            {
+                print "<tr>";
+                print "<td>".$row->titulo."</td>";
+                print "<td>".$row->preco."</td>";
+                print "<td value='".$row->id."'>";
+                    print "<a href='formulario.php'><img src='../../../icons/pencil.png' alt='Editar'/></a>";
+                    print "<a href=''><img src='../../../icons/trash.png' alt='Remover'/></a>";
+                print "</td>";
+                print "</tr>";
             }
         }
 

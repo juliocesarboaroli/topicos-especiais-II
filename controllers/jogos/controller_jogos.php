@@ -25,4 +25,9 @@
      {
          $jogos->ListarJogos();
      }
+
+     function ListarInformacoesTextoJogos()
+     {
+         $jogos->ListarInformacoesTextoJogos();
+     }
 ?>

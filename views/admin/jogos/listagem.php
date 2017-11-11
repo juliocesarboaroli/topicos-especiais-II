@@ -22,22 +22,11 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>PES 2018</td>
-                    <td>200</td>
-                    <td>
-                        <a href="formulario.php"><img src="../../../icons/pencil.png" alt="Editar"/></a>
-                        <a href=""><img src="../../../icons/trash.png" alt="Remover"/></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>FIFA 18</td>
-                    <td>200</td>
-                    <td>
-                        <a href="formulario.php"><img src="../../../icons/pencil.png" alt="Editar"/></a>
-                        <a href=""><img src="../../../icons/trash.png" alt="Remover"/></a>
-                    </td>
-                </tr>
+                <?php
+                    include($_SERVER["DOCUMENT_ROOT"]."/topicos/controllers/jogos/controller_jogos.php");
+                    $jogos = new Jogos();
+                    $jogos->ListarInformacoesTextoJogos();
+                ?>
             </tbody>
         </table>
     </div>

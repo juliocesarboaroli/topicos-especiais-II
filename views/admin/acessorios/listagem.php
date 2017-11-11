@@ -23,20 +23,11 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Controle</td>
-                    <td>100</td>
-                    <td>
-                        <a href="formulario.php"><img src="../../../icons/pencil.png" alt="Editar"/></a>
-                        <a href=""><img src="../../../icons/trash.png" alt="Remover"/></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Mouse</td>
-                    <td>20</td>
-                    <td>
-                        <a href="formulario.php"><img src="../../../icons/pencil.png" alt="Editar"/></a>
-                        <a href=""><img src="../../../icons/trash.png" alt="Remover"/></a>
-                    </td>
+                    <?php
+                        include($_SERVER["DOCUMENT_ROOT"]."/topicos/controllers/acessorios/controller_acessorios.php");
+                        $acessorios = new Acessorios();
+                        $acessorios->ListarInformacoesTextoAcessorios();
+                    ?>
                 </tr>
             </tbody>
         </table>
