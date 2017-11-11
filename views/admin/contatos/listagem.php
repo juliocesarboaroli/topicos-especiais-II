@@ -11,28 +11,24 @@
 
 <body>
     <div class="content">
-        <h1>Notícias</h1>
+        <h1>Contatos</h1>
         <a href="formulario.php" class="btn btn-green btn-full-width">Adicionar</a>
         <table class="list-table">
             <thead>
                 <tr>
-                    <th>Descrição</th>
+                    <th>Pessoa</th>
+                    <th>Mensagem</th>
+                    <th>email</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Novo jogo adicionado à loja. PES 2018 está disponível por R$ 200,00</td>
+                    <td>João da Silva</td>
+                    <td>Olá, quanto tempo demora pro produto chegar?</td>
+                    <td>joaodasilva@gmail.com</td>
                     <td>
-                        <a href="formulario.php"><img src="../../../icons/pencil.png" alt="Editar"/></a>
-                        <a href=""><img src="../../../icons/trash.png" alt="Remover"/></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Novo acessório na loja. Agora vendemos o ASUS ZENFONE 4.</td>
-                    <td>
-                        <a href="formulario.php"><img src="../../../icons/pencil.png" alt="Editar"/></a>
-                        <a href=""><img src="../../../icons/trash.png" alt="Remover"/></a>
+                        <a href="resposta.php?email=joaodasilva@gmail.com"><img src="../../../icons/forward.png" alt="Responder"/></a>
                     </td>
                 </tr>
             </tbody>

@@ -11,7 +11,7 @@
 
 <body>
     <div class="content">
-        <h1>Manutenção de jogos</h1>
+        <h1>Jogos</h1>
         <a href="formulario.php" class="btn btn-green btn-full-width">Adicionar</a>
         <table class="list-table">
             <thead>
@@ -26,16 +26,16 @@
                     <td>PES 2018</td>
                     <td>200</td>
                     <td>
-                        <a href="formulario.php"><img src="../../../icons/pencil.png"/></a>
-                        <a href=""><img src="../../../icons/trash.png"/></a>
+                        <a href="formulario.php"><img src="../../../icons/pencil.png" alt="Editar"/></a>
+                        <a href=""><img src="../../../icons/trash.png" alt="Remover"/></a>
                     </td>
                 </tr>
                 <tr>
                     <td>FIFA 18</td>
                     <td>200</td>
                     <td>
-                        <a href="formulario.php"><img src="../../../icons/pencil.png"/></a>
-                        <a href=""><img src="../../../icons/trash.png"/></a>
+                        <a href="formulario.php"><img src="../../../icons/pencil.png" alt="Editar"/></a>
+                        <a href=""><img src="../../../icons/trash.png" alt="Remover"/></a>
                     </td>
                 </tr>
             </tbody>
