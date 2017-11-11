@@ -27,12 +27,6 @@
                 $jogos->ListarJogos();
             ?>
         </div>
-            <form action="../controllers/jogos/controller_jogos.php" method="post" id="upload" name="upload" enctype="multipart/form-data">
-                <input type="text" id="titulo" name="titulo" />
-                <input type="text" id="preco" name="preco" />
-                <input type="file" id="imagem" name="imagem" />
-                <input type="submit" value="submitar" />
-            </form>
     </div>
 </body>
 </html>
