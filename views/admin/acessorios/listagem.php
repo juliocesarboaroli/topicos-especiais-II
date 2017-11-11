@@ -26,16 +26,16 @@
                     <td>Controle</td>
                     <td>100</td>
                     <td>
-                        <a href="formulario.php"><img src="../../../icons/pencil.png"/></a>
-                        <a href=""><img src="../../../icons/trash.png"/></a>
+                        <a href="formulario.php"><img src="../../../icons/pencil.png" alt="Editar"/></a>
+                        <a href=""><img src="../../../icons/trash.png" alt="Remover"/></a>
                     </td>
                 </tr>
                 <tr>
                     <td>Mouse</td>
                     <td>20</td>
                     <td>
-                        <a href="formulario.php"><img src="../../../icons/pencil.png"/></a>
-                        <a href=""><img src="../../../icons/trash.png"/></a>
+                        <a href="formulario.php"><img src="../../../icons/pencil.png" alt="Editar"/></a>
+                        <a href=""><img src="../../../icons/trash.png" alt="Remover"/></a>
                     </td>
                 </tr>
             </tbody>

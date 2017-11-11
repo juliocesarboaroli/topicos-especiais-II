@@ -11,25 +11,21 @@
 
 <body>
     <div class="content">
-        <h1>Contatos</h1>
+        <h1>Compras</h1>
         <a href="formulario.php" class="btn btn-green btn-full-width">Adicionar</a>
         <table class="list-table">
             <thead>
                 <tr>
-                    <th>Pessoa</th>
-                    <th>Mensagem</th>
-                    <th>email</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>João da Silva</td>
-                    <td>Olá, quanto tempo demora pro produto chegar?</td>
-                    <td>joaodasilva@gmail.com</td>
-                    <td>
-                        <a href="resposta.php?email=joaodasilva@gmail.com"><img src="../../../icons/forward.png" alt="Responder"/></a>
-                    </td>
+                    <td>Mouse</td>
+                    <td>20</td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
