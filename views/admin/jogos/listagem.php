@@ -11,7 +11,7 @@
 
 <body>
     <div class="content">
-        <h1>Manutenção de jogos</h1>
+        <h1>Jogos</h1>
         <a href="formulario.php" class="btn btn-green btn-full-width">Adicionar</a>
         <table class="list-table">
             <thead>

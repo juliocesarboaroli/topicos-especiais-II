@@ -12,7 +12,7 @@
         <ul class="menu">
             <li><a href="index.php">HESS STORE</a></li>
             <li><a href="views/jogos.php">Jogos</a></li>
-            <li><a href="">Acessórios</a></li>
+            <li><a href="views/acessorios.php">Acessórios</a></li>
             <li><a href="">Formas de pagamento</a></li>
             <li><a href="views/contato.php">Contato</a></li>
             <li><a href="">Notícias</a></li>

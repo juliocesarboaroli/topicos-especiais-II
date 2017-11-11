@@ -17,9 +17,24 @@
                 <span>JOGOS</span>
             </div>
         </a>
-        <a href="" class="no-a-style admin-option">
+        <a href="acessorios/listagem.php" class="no-a-style admin-option">
             <div>
                 <span>ACESSÓRIOS</span>
+            </div>
+        </a>
+        <a href="" class="no-a-style admin-option">
+            <div>
+                <span>CONTATOS</span>
+            </div>
+        </a>
+        <a href="noticias/listagem.php" class="no-a-style admin-option">
+            <div>
+                <span>NOTÍCIAS</span>
+            </div>
+        </a>
+        <a href="" class="no-a-style admin-option">
+            <div>
+                <span>USUÁRIOS</span>
             </div>
         </a>
     </div>
