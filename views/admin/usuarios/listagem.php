@@ -16,31 +16,17 @@
         <table class="list-table">
             <thead>
                 <tr>
-                    <th>Nome</th>
                     <th>Usuário</th>
                     <th>Senha</th>
-                    <th></th>
+                    <th>Excluir</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Administrador</td>
-                    <td>admin</td>
-                    <td>admin</td>
-                    <td>
-                        <a href="formulario.php"><img src="../../../icons/pencil.png" alt="Editar"/></a>
-                        <a href=""><img src="../../../icons/trash.png" alt="Remover"/></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Setor vendas</td>
-                    <td>setor.vendas</td>
-                    <td>vendas123</td>
-                    <td>
-                        <a href="formulario.php"><img src="../../../icons/pencil.png" alt="Editar"/></a>
-                        <a href=""><img src="../../../icons/trash.png" alt="Remover"/></a>
-                    </td>
-                </tr>
+                <?php
+                     include($_SERVER["DOCUMENT_ROOT"]."/topicos/models/login/login.php");
+                     $usuarios = new Login;
+                     $usuarios->ListarUsuarios();
+                ?>
             </tbody>
         </table>
     </div>

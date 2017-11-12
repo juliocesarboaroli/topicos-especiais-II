@@ -50,5 +50,42 @@
             $rotas = new Routes();
             header("Location:".$rotas->routeLogin."");
         }
+
+        public function InserirUsuario($login, $senha)
+        {
+            $login = MD5($login);
+            $senha = MD5($senha);
+            $conexao = new Conexao();
+            $rotas = new Routes();
+            $conexaoBanco = $conexao->CriarConexao();
+            $conexaoBanco->exec("insert into login (usuario,senha) values ('".$login."','".$senha."')") or die(header("Location:".$rotas->routeErro.""));
+            header("Location:".$rotas->routeUsuario."");
+        }
+
+        public function ExcluirUsuario($id)
+        {
+            $conexao = new Conexao();
+            $rotas = new Routes();
+            $conexaoBanco = $conexao->CriarConexao();
+            $conexaoBanco->exec("delete from login where id = ".$id."") or die(header("Location:".$rotas->routeErro.""));
+            header("Location:".$rotas->routeUsuario."");
+        }
+
+        public function ListarUsuarios()
+        {
+            $conexao = new Conexao();
+            $conexaoBanco = $conexao->CriarConexao();
+            $resultado = $conexaoBanco->query("select id,usuario,senha from login");
+            while ($row = $resultado->fetch(PDO::FETCH_OBJ))
+            {
+                print "<tr>";
+                print "<td>".$row->usuario."</td>";
+                print "<td>".$row->senha."</td>";
+                print "<td>";
+                    print "<a href='../../../controllers/login/controller_login_base.php?excluir=".$row->id."'><img src='../../../icons/trash.png' alt='Remover'/></a>";
+                print "</td>";
+                print "</tr>";
+            }
+        }
     }
 ?>   

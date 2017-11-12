@@ -8,6 +8,8 @@
         public $routeAcessorios = "/topicos/views/admin/acessorios/listagem.php";
         public $routeContato = "/topicos";
         public $routeContatos = "/topicos/views/admin/contatos/listagem.php";
+        public $routeNoticias = "/topicos/views/admin/noticias/listagem.php";
         public $routeAdministrador = "/topicos/views/admin/principal.php";
+        public $routeUsuario = "/topicos/views/admin/usuarios/listagem.php  ";
     }
 ?>

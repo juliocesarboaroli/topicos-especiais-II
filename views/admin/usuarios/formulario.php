@@ -11,11 +11,7 @@
 
 <body>
     <div class="content">
-        <form action="">
-            <input type="hidden" name="codigo" id="codigo">
-
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" class="field-full-width"/>
+        <form action="../../../controllers/login/controller_login_base.php" method="post">
             <label for="usuario">Usuário</label>
             <input type="text" id="usuario" name="usuario" class="field-full-width"/>
             <label for="senha">Senha</label>

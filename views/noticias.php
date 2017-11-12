@@ -21,22 +21,11 @@
             <li><a href="login.php">Área do administrador</a></li>
         </ul>
         <div class="noticias">
-            <div>
-                <h3>Título da notícia</h3>
-                <p>Descrição da notícia vai aqui</p>
-            </div>
-            <div>
-                <h3>Título da notícia</h3>
-                <p>Descrição da notícia vai aqui</p>
-            </div>
-            <div>
-                <h3>Título da notícia</h3>
-                <p>Descrição da notícia vai aqui</p>
-            </div>
-            <div>
-                <h3>Título da notícia</h3>
-                <p>Descrição da notícia vai aqui</p>
-            </div>
+            <?php
+                include($_SERVER["DOCUMENT_ROOT"]."/topicos/models/noticias/noticias.php");
+                $noticias = new Noticias;
+                $noticias->ListarNoticiasAreaUsuario();
+            ?>
         </div>
     </div>
 </body>
