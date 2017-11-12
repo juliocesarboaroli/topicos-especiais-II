@@ -15,7 +15,6 @@
             <li><a href="../index.php">HESS STORE</a></li>
             <li><a href="jogos.php">Jogos</a></li>
             <li><a href="acessorios.php">Acessórios</a></li>
-            <li><a href="">Formas de pagamento</a></li>
             <li><a href="contato.php">Contato</a></li>
             <li><a href="noticias.php">Notícias</a></li>
             <li><a href="login.php">Área do administrador</a></li>

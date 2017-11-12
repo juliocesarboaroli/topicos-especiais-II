@@ -1,3 +1,8 @@
+<?php
+   include($_SERVER["DOCUMENT_ROOT"]."/topicos/models/session/session.php");
+   $session = new Session;
+   $session->VerificarSessao();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 

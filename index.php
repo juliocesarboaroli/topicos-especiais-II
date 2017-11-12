@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    session_destroy();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,7 +17,6 @@
             <li><a href="index.php">HESS STORE</a></li>
             <li><a href="views/jogos.php">Jogos</a></li>
             <li><a href="views/acessorios.php">Acessórios</a></li>
-            <li><a href="">Formas de pagamento</a></li>
             <li><a href="views/contato.php">Contato</a></li>
             <li><a href="views/noticias.php">Notícias</a></li>
             <li><a href="views/login.php">Área do administrador</a></li>

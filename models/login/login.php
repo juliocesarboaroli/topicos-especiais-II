@@ -32,6 +32,9 @@
                 $retorno_login = $login->VerificarUsuarioSenha($_POST['usuario'],$_POST['senha']);
                 if ($retorno_login)
                 {
+                    session_start();
+                    $_SESSION['usuario'] = $_POST['usuario'];
+                    $_SESSION['senha'] = $_POST['senha'];
                     return true;
                 }
                 else
