@@ -22,7 +22,7 @@
                 }
                 else
                 {
-                    print "<form action='../../../controllers/acessorios/controller_acessorios.php' method='post' id='upload-jogos' name='upload-jogos' enctype='multipart/form-data'>";
+                    print "<form action='../../../controllers/acessorios/controller_acessorios.php' method='post' id='upload-acessorios' name='upload-acessorios' enctype='multipart/form-data'>";
                         print "<label for='nome'>Nome</label>";
                         print "<input type='text' id='nome' name='nome' class='field-full-width' />";
                         print "<label for='preco'>Preço</label>";

@@ -11,10 +11,16 @@
 
 <body>
     <div class="content">
-        <form>
+        <form method="post" action="../../../controllers/contato/controller_contato.php">
+            <?php
+                if (isset($_GET['id']))
+                {
+                    print "<input type='hidden' id='id' name='id' value='".$_GET['id']."' />";
+                }
+            ?>
             <label for="mensagem">Mensagem</label>
-            <input type="text" id="mensagem" name="mensagem" class="field-full-width"/>
-            <input type="submit" value="Gravar" class="btn btn-green btn-full-width"/>
+            <input type="text" id="resposta" name="resposta" class="field-full-width"/>
+            <input type="submit" value="Responder" class="btn btn-green btn-full-width"/>
         </form>
     </div>
 </body>

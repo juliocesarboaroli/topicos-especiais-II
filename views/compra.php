@@ -21,24 +21,26 @@
             <li><a href="login.php">Área do administrador</a></li>
         </ul>
         <div class="center-align">
-            <h1>Pro evolution soccer 2018</h1>
-            <img src="../imagens-teste/img.png" alt="nome do jogo">
-            <br>
-            <span>Preço: R$ 200,00</span>
-            <form>
-                <label for="quantidade" class="inline">Quantidade</label>
-                <input type="number" id="quantidade" name="quandidade">
-
-                <label for="plataforma" class="inline">Plataforma</label>
-                <select name="plataforma" id="plataforma">
-                    <option value="xboxone">Xbox One</option>
-                    <option value="xbox360">Xbox 360</option>
-                    <option value="pc">PC</option>
-                    <option value="ps4">PS4</option>
-                    <option value="ps3">PS3</option>
-                </select>
-                <input type="submit" class="btn btn-green" value="Pronto">
-            </form>
+            <?php
+                if (isset($_GET['id']) && isset($_GET['tipo']) && $_GET['tipo']  == "jogo")
+                {
+                    include($_SERVER["DOCUMENT_ROOT"]."/topicos/controllers/jogos/controller_jogos.php");
+                    $jogos = new Jogos();
+                    $jogos->ListarJogosTelaCompras($_GET['id']);
+                }
+                elseif (isset($_GET['id']) && isset($_GET['tipo']) && $_GET['tipo'] == "acessorio")
+                {
+                    include($_SERVER["DOCUMENT_ROOT"]."/topicos/controllers/acessorios/controller_acessorios.php");
+                    $acessorios = new Acessorios();
+                    $acessorios->ListarAcessoriosTelaCompras($_GET['id']);
+                }
+                else
+                {
+                    include($_SERVER["DOCUMENT_ROOT"]."/topicos/models/routes/routes.php");
+                    $rotas = new Routes();
+                    header("Location:".$rotas->routeErro."");
+                }  
+            ?>
         </div>
     </div>
 </body>

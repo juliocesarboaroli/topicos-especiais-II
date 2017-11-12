@@ -12,21 +12,21 @@
 <body>
     <div class="content">
         <h1>Compras</h1>
-        <a href="formulario.php" class="btn btn-green btn-full-width">Adicionar</a>
         <table class="list-table">
             <thead>
                 <tr>
                     <th>Produto</th>
                     <th>Valor</th>
-                    <th></th>
+                    <th>Quantidade</th>
+                    <th>Plataforma</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Mouse</td>
-                    <td>20</td>
-                    <td></td>
-                </tr>
+               <?php
+                    include($_SERVER["DOCUMENT_ROOT"]."/topicos/models/compra/compra.php");
+                    $compra = new Compras;
+                    $compra->ListarCompras();
+               ?>
             </tbody>
         </table>
     </div>

@@ -2,6 +2,7 @@
     include($_SERVER["DOCUMENT_ROOT"]."/topicos/models/jogos/jogos.php");
     $jogos = new Jogos();
 
+    // Inserir um novo jogo
     if ((isset($_POST['titulo']) && isset($_POST['preco']) && (isset($_FILES['imagem']))))
     {
         $titulo = $_POST['titulo'];
@@ -11,14 +12,16 @@
         $jogos->InserirNovoJogo($titulo, $preco, $imagem, $tamanho_imagem);
     }
 
-     function DeletarJogo($titulo)
+     // Atualizar um acessório existente
+     if ((isset($_POST['id']) && (isset($_POST['titulo'])) && (isset($_POST['preco']))))
      {
-        $jogos->ExcluirJogo($titulo);
+         $jogos->AtualizarJogo($_POST['id'],$_POST['titulo'],$_POST['preco']);
      }
 
-     function AtualizarJogo($titulo)
+     // Deletar um acessório existente
+     if (isset($_GET['excluir']))
      {
-         $jogos->AtualizarJogo($titulo);
+        $jogos->ExcluirJogo($_GET['excluir']);
      }
 
      function ListarJogos()
@@ -29,5 +32,10 @@
      function ListarInformacoesTextoJogos()
      {
          $jogos->ListarInformacoesTextoJogos();
+     }
+
+     function ListarJogosTelaCompras()
+     {
+         $jogos->ListarJogosTelaCompras();
      }
 ?>

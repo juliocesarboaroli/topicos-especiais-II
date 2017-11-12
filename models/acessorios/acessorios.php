@@ -48,7 +48,7 @@
                     print "R$ ".$row->preco."";
                 print "</div>";
                 print "<div class='card-footer'>";
-                    print "<a href='compra.php' class='btn btn-green'> Comprar </a>";
+                    print "<a href='compra.php?id=".$row->id."&tipo=acessorio' class='btn btn-green'> Comprar </a>";
                 print "</div>";
                 print "</div>";
             }
@@ -69,6 +69,27 @@
                         print "<a href='../../../controllers/acessorios/controller_acessorios.php?excluir=".$row->id."'> <img src='../../../icons/trash.png' alt='Remover'/></a>";
                     print "</td>";
                 print "</tr>";
+            }
+        }
+
+        public function ListarAcessoriosTelaCompras($id)
+        {
+            $conexao = new Conexao();
+            $conexaoBanco = $conexao->CriarConexao();
+            $resultado = $conexaoBanco->query("select id,nome,preco,imagem from acessorios where id=".$id."");
+            while ($row = $resultado->fetch(PDO::FETCH_OBJ))
+            {
+                print "<form method='post' action='../controllers/compra/controller_compra.php'>";
+                    print "<input type='hidden' id='produto' name='produto' value='".$row->nome."' />";
+                    print "<input type='hidden' id='preco' name='preco' value='".$row->preco."' />";
+                    print "<h1>".$row->nome."</h1>";
+                    print "<img height='250' width='250' src='data:image/jpeg;base64,".base64_encode($row->imagem)."' alt='".$row->nome."'>";
+                    print "<br>";
+                    print "<h4>Preço: R$ ".$row->preco." </h4>";
+                    print "<label for='quantidade' class='inline'>Quantidade</label>";
+                    print "<input type='number' id='quantidade' name='quantidade'>";
+                    print "<input type='submit' class='btn btn-green' value='Pronto'>";
+                print "</form>";
             }
         }
 

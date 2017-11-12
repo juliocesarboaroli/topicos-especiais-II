@@ -24,16 +24,6 @@
         $acessorios->ExcluirAcessorios($_GET['excluir']);
      }
 
-     function ExcluirAcessorio($id)
-     {
-        $acessorios->ExcluirAcessorio($id);
-     }
-
-     function AtualizarAcessorio($id)
-     {
-         $acessorios->AtualizarAcessorio($id);
-     }
-
      function ListarAcessorios()
      {
          $acessorios->ListarAcessorios();
@@ -42,6 +32,11 @@
      function ListarInformacoesTextoAcessorios()
      {
          $acessorios->ListarInformacoesTextoAcessorios();
+     }
+
+     function ListarAcessoriosTelaCompras($id)
+     {
+         $acessorios->ListarAcessoriosTelaCompras($id);
      }
 
      function BuscarDadosAcessorios($id)

@@ -12,25 +12,21 @@
 <body>
     <div class="content">
         <h1>Contatos</h1>
-        <a href="formulario.php" class="btn btn-green btn-full-width">Adicionar</a>
         <table class="list-table">
             <thead>
                 <tr>
                     <th>Pessoa</th>
                     <th>Mensagem</th>
                     <th>Email</th>
-                    <th></th>
+                    <th>Resposta</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>João da Silva</td>
-                    <td>Olá, quanto tempo demora pro produto chegar?</td>
-                    <td>joaodasilva@gmail.com</td>
-                    <td>
-                        <a href="resposta.php?email=joaodasilva@gmail.com"><img src="../../../icons/forward.png" alt="Responder"/></a>
-                    </td>
-                </tr>
+                <?php
+                    include($_SERVER["DOCUMENT_ROOT"]."/topicos/models/contato/contato.php");
+                    $contato = new Contato;
+                    $contato->ListarContatos();
+                ?>
             </tbody>
         </table>
     </div>

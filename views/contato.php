@@ -22,15 +22,15 @@
         </ul>
         <div class="cards">
         </div>
-            <form>
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" class="field-full-width"/>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" class="field-full-width"/>
-                <label for="mensagem">Mensagem</label>
-                <input type="text" name="mensagem" id="mensagem" class="field-full-width"/>
-                <input type="submit" value="Enviar" class="btn btn-green btn-full-width"/>
-            </form>
+        <form method="post" action="../controllers/contato/controller_contato.php" enctype="multipart/form-data">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" class="field-full-width"/>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="field-full-width"/>
+            <label for="mensagem">Mensagem</label>
+            <input type="text" name="mensagem" id="mensagem" class="field-full-width"/>
+            <input type="submit" value="Enviar" class="btn btn-green btn-full-width"/>
+        </form>
     </div>
 </body>
 </html>
